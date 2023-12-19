@@ -1,0 +1,63 @@
+.banner-cont{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 2rem;
+    background: linear-gradient(to top, #fff, #8ecae6);
+    z-index: 1;
+}
+
+.side-image{
+    position: absolute;
+    bottom: 0;
+    height:15rem;
+    /* background-color: red; */
+}
+.side-image img{
+    height: 100%;
+    width: 100%;
+}
+.banner-cont .heading{
+    font-weight: 600;
+    font-size: 3.5rem;
+    text-align: center;
+    background: linear-gradient(to right, #219ebc, #8ecae6);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.banner-cont .subheading{
+    text-align: center;
+    font-size: 1.3rem;
+    color: #1b263b;
+}
+
+@media screen and (max-width: 550px){
+    .banner-cont .heading{
+        font-size: 2.5rem;
+        line-height:40px;
+    }
+}
+.action-cont{
+    display: flex;
+    gap: 1rem;
+    z-index: 2;
+}
+.action-cont button{
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    padding: 0.5rem 0.9rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.explore-btn{
+    background-color: #219ebc;
+    color: white;
+}
+.contact-btn{
+    color: #219ebc;
+    background-color: #fff; 
+}

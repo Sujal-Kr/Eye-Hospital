@@ -1,0 +1,50 @@
+.features-cont .heading{ 
+    display: flex;
+    justify-content: center;
+    /* display: inline-block; */
+}
+.heading h6{
+    padding: 0.4rem;
+    background: linear-gradient(to right, #8ecae6 50%,#fff 50%);
+    
+    color: #219ebc;
+}
+.features-cont .desc{
+    text-align: center;
+}
+.service-list{
+    margin: 7rem 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:2.3rem;
+}
+.service-list .list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.service-list .icon-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height:7rem;
+    width: 7rem;
+    border-radius: 50%;
+}
+.icon-cont i{
+    font-size: 3rem;
+    color:#219ebc;
+}
+
+
+.list-desc{
+    list-style: none;
+    color:#4a5764;
+}
+.service-list{
+    padding: 2rem;
+}

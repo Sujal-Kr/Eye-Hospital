@@ -1,0 +1,122 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Pacifico&display=swap');
+
+.navbar-cont{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    /* overflow-x: hidden; */
+    z-index: 100;
+    color: black;
+    transition: 0.3s;
+    backdrop-filter: blur(12px);
+  }
+  .changeNav{
+    color: black;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  }
+  .logo-cont img{
+    height: 3rem;
+}
+a{
+  text-decoration: none;
+  color: unset ;
+}
+.logo-cont {
+    display: flex;
+    align-items: center;
+}
+.logo-cont span{
+    font-size: 2rem;
+    /* text-transform: uppercase; */
+    font-weight: 600;
+    color: #005f73;
+    font-family: 'Alkatra', cursive;
+  }
+  .navlist{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    transition: 0.3s;
+    color: black;
+  }
+  .navlist > *:hover{
+    border-bottom:2px solid #134E5E;
+    
+  }
+
+  .close-btn,.menu-btn{
+    display: none;
+  }
+  .close-btn{
+    color: black ;
+  }
+  @media screen and (max-width:768px) {
+    .close-btn,.menu-btn{
+      display: inline-block;
+    }
+    .menu-btn{
+      font-size: 2rem;
+    }
+    .close-btn{
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+    }
+    .navlist{
+      position: fixed;
+      top:0;
+      left:0;
+      height: 100dvh;
+      width: 80vw;
+      flex-direction: column;
+      transform: translateX(-100vw);
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 6rem 2rem;
+      font-size: 1.4rem;
+      /* background: #134E5E;  
+      background: -webkit-linear-gradient(to top, #71B280, #219ebc);  
+      background: linear-gradient(to top, #ede6e6, #2a9d8f); */
+      background-color: white;
+      transition: 0.3s;
+      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+      
+    }
+    .navlist .list{
+        color: black;  
+    }
+    .active{
+      transition: 0.3s;
+      transform: translateX(0);
+    }
+    .logo-cont{
+      font-size: 2rem;
+    }
+  }
+  
+@media screen and (max-width:632px) {
+    .logo-cont span{
+        font-size: 1.6rem;
+    }
+}
+@media screen and (max-width:450px) {
+    .logo-cont span{
+        font-size: 1.1rem;
+    }
+    .menu-btn{
+        font-size: 1.2rem ;
+    }
+    .close-btn{
+      font-size: 2rem;
+    }
+}

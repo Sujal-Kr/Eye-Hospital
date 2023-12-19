@@ -1,0 +1,91 @@
+.team-cont{
+    margin: 4rem 0rem;
+
+}
+.team-heading{
+    display: flex;
+    justify-content: center;
+}
+.team-heading h6{
+    text-transform: uppercase;
+    padding: 0.4rem;
+    background: linear-gradient(to right, #8ecae6 50%,#fff 50%);
+    color: #219ebc;
+}
+.team-cont h1 ,.team-cont h5{
+    text-align: center;
+}
+.doc-outer-cont{
+    display: flex;
+    justify-content: center;
+    margin: 6rem 2rem;
+}
+.doc-inner-cont{
+    width: 50rem;
+    position: relative;
+    padding: 2rem 6rem;
+    background-color:  #e5e7eb;
+}
+@media screen and (max-width:1000px) {
+    .doc-inner-cont{
+        width: 40rem ;
+        padding: 3rem 2rem;
+    }
+    .doc-name,.doc-oct{
+        text-align: center;
+    }
+}
+@media screen and (max-width:800px) {
+    .doc-outer-cont{
+        margin: 3rem 0;
+    }
+    .doc-inner-cont{
+        width: 80% ;
+    }
+    .doc-image{
+        top:0;
+        left: 0;
+        height:8rem;
+        width: 8rem;
+        
+    }
+}
+
+.doc-oct{
+    color:#023047;
+}
+.doc-image{
+    position: absolute;
+    top:-20px;
+    left: -50px;
+    height:8rem;
+    width: 8rem;
+    
+}
+.doc-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    border: 2px solid #e5e5e5;
+}
+@media screen and (max-width:550px) {
+    .doc-outer-cont{
+        margin: 3rem 1rem;
+    }
+    .doc-inner-cont{
+        width: 100%;
+        padding: 4rem 2rem;
+    }
+    .doc-image{
+        top:-2.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        height:6rem;
+        width: 6rem;
+        border-radius: 50%;
+    }
+    .doc-name,.doc-oct{
+        text-align: center;
+    }
+}

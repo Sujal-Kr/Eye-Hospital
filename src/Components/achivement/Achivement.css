@@ -1,0 +1,42 @@
+.achivement-cont{
+    margin:6rem 0;
+}
+.achivement-cont .heading-cont{
+    display: flex;
+    justify-content: center;
+}
+.achivement-cont h6{
+    text-transform: uppercase;
+    padding: 0.4rem;
+    background: linear-gradient(to right, #8ecae6 50%,#fff 50%);
+    color: #219ebc; 
+}
+.achivement-cont .sub-head{
+    text-align: center;
+    padding:  0 1rem;
+    text-transform: capitalize;
+}
+.ach-item-cont{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 200px;
+    gap:2rem;
+    margin:1rem;
+    
+    
+}
+.ach-item{
+    border: 2px solid #219ebc;
+    padding: 0.4rem;
+}
+.ach-item img{
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@media screen and (min-width: 768px){
+    .ach-item-cont{
+        padding: 2rem 3rem;
+    }
+}
